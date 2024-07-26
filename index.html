@@ -1,64 +1,163 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aura Store </title>
-
+    <title>Perfumes Elegance</title>
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-            background-color: #d3d3d3;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333; /*escrita dentro dos quadros de perfume*/
+            background-color: lightyellow; /* fundo da pagina*/
         }
-        h1 {
-            color: goldenrod;
-        }
-        p {
-            color:#330033;
-            max-width: 600px;
-        }
-        h2 {
-            list-style-type: decimal;
-            max-width: 600px;
-            padding-left: 20px;
-        }
-        li {
-            color: #000000;
-        }
-        div {
+        header {
+            background-color: rgba(212, 255, 0, 0.512);
+            color: black; /* titulo de perfume elegance*/
+            padding: 10px 0;
             text-align: center;
         }
-        titulo {
+        #loguinho {
             display: flex;
+            height: 150px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .hero {
+            background-image: url('hero-image.jpg');
+            background-size: cover;
+            color:black; /* o preto do "encontr seu perfume"*/
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin: 10px 0 20px;
+        }
+        .category {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .category div {
+            flex: 1;
+            margin: 0 10px;
+            /*background-color: white; /* cobre a cor das imagens das fragancias */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(224, 8, 8, 0.846);
+            text-align: center;
+        }
+        #perfumeereFem {
+            background-color: rgb(242, 242, 162);
+        }
+        #perfumeMas {
+            background-color: #333;
+            color: white;
+        }
+        #perfumeUnix {
+            background-color: yellow;
+        }
+        .category img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        #containerfooter{
+            display: flex;
+            align-items: end;
+        }
+        footer {
+            background-color:blue; /*final da pagina em que esta a data*/ 
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: static;
+            bottom: 0;
+            width: 100%;
+        }
+        #paragraf {
+            width: 1000px;
+            margin: 0% 30%;
+            text-align: justify;
+        }
+        #Paragrafo{
+            text-indent: 40px;
+        }
+        #paragrfBranco{
+            background-color: red;
+            width: 30px;
         }
     </style>
-
 </head>
 <body>
-    <div id="cabecalho">
-        <div id="titulo">
-        <img width="300" height="300" src="auralogo.jfif" alt="">
-        <h1> AURA PERFUMARIA </h1>
+    <header>
+        <div class="container">
+            <div id="loguinho">
+                <img src="auralogo.jfif" alt="">
+                <h1>AURA PERFUMEEIRE</h1> <!-- inicial, pega bem-->
+            </div> 
         </div>
-    </div>
-    <div style="text-align: left">
-    <p>Aura Perfumaria é a arte e ciência de criar fragrâncias agradáveis. Envolve a combinação
-        de óleos essenciais, aromáticos e outros ingredientes para produzir perfumes que evocam
-        emoções e memórias. A história da perfumaria remonta a antigas civilizações, onde era 
-        usada em rituais religiosos e para fins estéticos. Hoje, a perfumaria é uma indústria 
-        global, com uma vasta gama de produtos, desde perfumes de luxo até fragrâncias para o 
-        dia a dia. A criação de um perfume envolve um processo complexo de seleção de notas de 
-        topo,coração e base, que juntas formam a fragrância final.</p>
+    </header>
     
-    <h2>Mais histórias sobre as perfumarias:</h2>
-    <ol>
-        <li> <a target="_blank" href="https://brasilescola.uol.com.br/historia/historia-do-perfume.htm"> História do Perfume</a> </li>
-        <li> <a target="_blank" href="https://naturalebela.com.br/historia-do-perfume-no-brasil/#:~:text=As%20primeiras%20empresas%20de
-            %20perfumaria,Granado%20e%20a%20perfumaria%20Kanitz."> História do Perfume no historia do perfume no 
-            Brasil</a> </li>
-    </ol>
-    </div>
+    <div style="text-align: left">
+        <div id="paragraf">
+            <h3 id="Paragrafo"> Perfumaria é a arte e ciência de criar fragrâncias agradáveis. Envolve a combinação
+            de óleos essenciais, aromáticos e outros ingredientes para produzir perfumes que evocam
+            emoções e memórias. A história da perfumaria remonta a antigas civilizações, onde era 
+            usada em rituais religiosos e para fins estéticos. Hoje, a perfumaria é uma indústria 
+            global, com uma vasta gama de produtos, desde perfumes de luxo até fragrâncias para o 
+            dia a dia. A criação de um perfume envolve um processo complexo de seleção de notas de 
+            topo,coração e base, que juntas formam a fragrância final.</h3>
+        </div>
+        
+        <p>Mais histórias sobre as perfumarias:</p>
+        <ol>
+            <li> <a target="_blank" href="https://brasilescola.uol.com.br/historia/historia-do-perfume.htm"> História do Perfume</a> </li> <br>
+            <li> <a target="_blank" href="https://naturalebela.com.br/historia-do-perfume-no-brasil/#:~:text=As%20primeiras%20empresas%20de
+                %20perfumaria,Granado%20e%20a%20perfumaria%20Kanitz."> História do Perfume no historia do perfume no 
+                Brasil</a> </li>
+        </ol>
+        </div>
 
-    </body>
+    <section class="hero">
+        <div class="container">
+            <h1></h1>
+            <p>Encontre Seu Perfume Ideal</p>
+            <p>Descubra a nossa coleção de fragrâncias exclusivas e elegantes.</p>
+        </div>
+    </section>
+    
+    <section class="container">
+        <div class="category">
+            <div id="perfumeereFem">
+                <img src="perfume_redondo.jfif" alt="Perfumes Femininos">
+                <h2>Femininos</h2>
+                <p>Explore nossa seleção de perfumes femininos, com fragrâncias que capturam a essência da sofisticação.</p>
+            </div>
+            <div id="perfumeMas">
+                <img src="masc_perfume.jfif" alt="Perfumes Masculinos">
+                <h2>Masculinos</h2>
+                <p>Descubra perfumes masculinos que exalam confiança e estilo.</p>
+            </div>
+            <div id="perfumeUnix">
+                <img src="perfume_quadrado.jfif" alt="Perfumes Unissex">
+                <h2>Unissex</h2>
+                <p>Fragrâncias que são perfeitas para qualquer pessoa, em qualquer ocasião.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="containerfooter">
+    <footer>
+        <p>&copy; 2024 Aura Perfumeeire. Todos os direitos reservados.</p>
+    </footer>
+    </div>
+</body>
 </html>
